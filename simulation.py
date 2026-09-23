@@ -1,9 +1,10 @@
-from dataclasses import dataclass
+# from dataclasses import dataclass
+from parser import Parser
 
 
-@dataclass
 class Simulator:
-    pass
+    def __init__(self, map_file: str):
+        self.map_file = map_file
 
-    def simulate():
-        pass
+    def simulate(self):
+        Parser(self.map_file)
