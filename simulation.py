@@ -6,5 +6,5 @@ class Simulator:
     def __init__(self, map_file: str):
         self.map_file = map_file
 
-    def simulate(self):
+    def simulate(self) -> None:
         Parser(self.map_file)
